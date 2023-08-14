@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            padding: 36px;
+            /* width: 100%; */
+            height: 544px;
+            display: flex;
+            /* flex-direction:row ;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+            
+            /* flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */ 
+            /* flex-wrap:wrap; */
+            
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            
+            align-items: center;
+            align-items: flex-end;
+            align-items: stretch; */
+        }
+
+        #box1{
+            order: 2;
+            flex-grow: 3;
+        }
+        
+        #box3{
+            order:1 ;
+            background-color: aquamarine;
+            /* flex-shrink: 2; */
+            flex-basis: 300px;
+        }
+        #box4{
+            align-self: center;
+            align-self: flex-end;
+            align-self:flex-start ;
+        }
+        .box{
+            width: 175px;
+            height: 175px;
+            border: 2px solid black;
+            background-color: tomato;
+            margin: 2px;
+            padding: 4px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flex box</h1>
+    <div class="container">
+        <div class="box" id="box1">First</div>
+        <div class="box" id="box2">second</div>
+        <div class="box" id="box3">third</div>
+        <div class="box" id="box4">forth</div>
+    </div>
+    
+</body>
+</html>
