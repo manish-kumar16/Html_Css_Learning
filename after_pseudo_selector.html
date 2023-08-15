@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        header::before {
+            background: url('https://images.unsplash.com/photo-1691604768837-798aed3491aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8X2hiLWRsNFEtNFV8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+
+
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            /* text-align: center; */
+            margin: 4px 90px;
+        }
+
+        section {
+            margin: 3px 23px;
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border: 2px solid rebeccapurple; */
+            text-align: center;
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 12px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">home</li>
+                <li class="item">about us</li>
+                <li class="item">services</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to coading world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste earum doloremque placeat
+            eius id vitae explicabo quis ipsum laudantium. Molestias iste voluptatum iusto sed illo sapiente
+            corporis quia cum dolorem? Nemo, iusto eveniet.</p>
+
+    </section>
+
+</body>
+
+</html>
