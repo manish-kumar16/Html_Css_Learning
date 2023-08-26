@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and keyframes</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+        }
+
+        .box {
+            /* animation-name: manu; */
+            animation-name: manu2;
+            animation-duration: 4s;
+            animation-iteration-count: 4;
+            /* animation-fill-mode:forwards; */
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-direction: reverse;
+
+            background-color: violet;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes manu2 {
+
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+
+            }
+
+        }
+
+        @keyframes manu {
+            from {
+                width: 100px;
+
+            }
+
+            to {
+                width: 800px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+    </div>
+</body>
+
+</html>

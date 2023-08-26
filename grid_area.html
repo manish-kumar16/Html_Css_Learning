@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid template areas</title>
+    <style>
+        .cointainer{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar aside' 
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            border: 2px solid red;
+            background-color: bisque;
+        }
+
+        #navbar{
+            grid-area: navbar;
+        }
+
+        #section{
+            grid-area: section;
+        }
+        
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cointainer">
+        <div id="navbar" class="item">Home About us Contact us</div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, cupiditate? Quae deleniti nostrum dolore blanditiis eveniet, at maiores minus vitae error temporibus voluptates laudantium. Quibusdam, a ducimus aspernatur voluptas error voluptates harum voluptatem, labore, non doloribus corrupti alias ex illum molestiae! Totam ut tenetur quae dignissimos ea aliquam officiis cum hic neque, quas reiciendis suscipit saepe ipsum fugiat consequuntur quasi, necessitatibus veritatis possimus, quo id labore libero facere? Quod, sunt excepturi velit dolorum adipisci exercitationem ad neque quidem, placeat autem itaque error suscipit facilis assumenda doloremque esse quas laboriosam debitis, perferendis non blanditiis commodi ea vitae. Quidem quos nisi porro.</div>
+        <div id="aside" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, et. Accusamus eaque aliquid debitis soluta nesciunt ipsam dolor esse ullam praesentium. Ea ab asperiores voluptatum minima sit mollitia ex quae ad. Ex, ratione! Cupiditate, hic autem. Possimus, necessitatibus, quibusdam consequuntur hic sed facilis quod ratione blanditiis, officia modi iure excepturi.</div>
+        <div id="footer" class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maxime officiis debitis nesciunt ipsam laudantium cum magni, eveniet velit minima saepe tenetur voluptate illum iure accusantium placeat modi nihil tempora.</div>
+        <!-- <div class="item">This is item 1</div>
+        <div class="item">This is item 2</div>
+        <div class="item">This is item 3</div>
+        <div class="item">This is item 4</div>
+        <div class="item">This is item 5</div>
+        <div class="item">This is item 6</div>
+        <div class="item">This is item 7</div>
+        <div class="item">This is item 8</div>
+        <div class="item">This is item 9</div>
+        <div class="item">This is item 10</div> -->
+    </div>
+</body>
+</html>
